@@ -5,6 +5,11 @@ You should already have node installed. If you are using nvm, be sure to use:
 ```
 nvm use stable
 ```
+# Install Style 
+```
+npm i --save @fortawesome/vue-fontawesome
+```
+
 
 ## Mongo
 
@@ -63,7 +68,7 @@ Now run the node server:
 node server.js
 ```
 
-This will start on port 3000 to answer API queries.
+This will start on port 4000 to answer API queries.
 
 ## Running the front end
 
@@ -74,8 +79,8 @@ cd front-end
 npm install
 npm run serve
 ```
+## Digital Ocean
 
-You should be able to browse to `localhost:8080` and see the front end as it
-exists so far:
+* If you are getting an address already in use error on this or any other node projects it means you will need to close that port or switch to a new one.  Keep in mind the port needs to stay open at least until the assignment is graded. Use "forever list" to figure out what is being used and "forever stop {index}" to stop it.
 
-![home page at the beginning](/screenshots/home-page-beginning.png)
+* When moving to digital ocean or changing a port number check these files for the correct port numbers and paths: vue.config.js, /etc/nginx/sites-available/lab4.domainname.com,  and server.js( and other backend js files) for app.listen() and multer destination path. Reload nginx after all of these locations are checked "sudo nginx -s reload".
