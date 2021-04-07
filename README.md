@@ -5,10 +5,7 @@ You should already have node installed. If you are using nvm, be sure to use:
 ```
 nvm use stable
 ```
-# Install Style 
-```
-npm i --save @fortawesome/vue-fontawesome
-```
+
 
 
 ## Mongo
@@ -78,6 +75,11 @@ You can run the front by doing the following:
 cd front-end
 npm install
 npm run serve
+```
+# Install Style 
+in the front end run 
+```
+npm i --save @fortawesome/vue-fontawesome
 ```
 ## Digital Ocean
 
